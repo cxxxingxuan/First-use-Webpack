@@ -1,0 +1,443 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+li {
+    list-style: none;
+    font-family: 'iconfont';
+}
+a {
+    text-decoration: none;
+}
+h1{
+    text-align:center;
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 404550 */
+    src: url('//at.alicdn.com/t/font_404550_yxj4wx836ctk2o6r.eot');
+    src: url('//at.alicdn.com/t/font_404550_yxj4wx836ctk2o6r.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_404550_yxj4wx836ctk2o6r.woff') format('woff'),
+    url('//at.alicdn.com/t/font_404550_yxj4wx836ctk2o6r.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_404550_yxj4wx836ctk2o6r.svg#iconfont') format('svg');
+}
+.layout {
+    min-width:1333px;
+}
+.navigation {
+    margin-top:20px;
+    position:relative;
+    background-color:transparent;
+    z-index: 1;
+}
+.navigation a {
+    color:#fed136;
+    font-size:28px;
+    line-height:1.5;
+    padding:15px;
+    position:absolute;
+    top:-9px;;
+    left:0;
+}
+.navigation ul {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.navigation li {
+    margin: 15px ;
+    cursor:pointer;
+    color:#fff;
+    font-size: 18px;
+}
+.navigation li:hover {
+    color:#fed136;
+}
+#header {
+    margin-top: -71px;
+}
+.header-text {
+    text-align:center;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:1;
+}
+.header-text i {
+    font-size:40px;
+    color:#fff;
+}
+.header-text h1 {
+    font-size:75px;
+    color:#fff;
+}
+.header-text p {
+    width:220px;
+    height:70px;
+    line-height:70px;
+    background:#fed136;
+    border-radius:3px;
+    font-weight:bold;
+    margin-left:auto;
+    margin-right:auto;
+    color:#fff;
+    margin-top: 45px;
+    cursor:pointer;
+    font-size:18px;
+}
+.header-text p:hover {
+    background:orange;
+}
+#container {
+    text-align:center;
+    width:1333px;
+    margin:0 auto;
+}
+#container h1{
+    padding-top:200px;
+    font-size:40px;
+    line-height:1.5;
+}
+#container i {
+    color:#777;
+}
+.ser-content {
+    display:flex;
+    justify-content: space-between;
+    margin-top:80px;
+}
+.ser-modular {
+    width:430px;
+}
+.ser-logo {
+    width:100px;
+    height:100px;
+    line-height:100px;
+    background:#fed136;
+    margin:0 auto;
+    border-radius:50%;
+    font-family: 'iconfont';
+    font-size:60px;
+    color: #fff;
+}
+.ser-modular h3 {
+    padding:20px 0;
+}
+.ser-modular p {
+    color:#777;
+}
+
+.about h2 {
+    position:relative;
+    top:80px;
+    color:#fff;
+}
+.about h2:before {
+    content:'';
+    display:block;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:#fed136;
+    position:absolute;
+    top:-42px;
+    left:50%;
+    transform:translate(-50%,0);
+    z-index:-1;
+    box-shadow:0 0 0 5px #f1f1f1;
+}
+.abo-modular {
+    padding: 40px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.abo-text {
+    text-align:right;
+    width:400px;
+    height:180px;
+}
+.abo-modular:nth-child(even) .abo-text {
+    text-align:left;
+    order:1;
+}
+.abo-modular:after {
+    content:'';
+    display:block;
+    width:2px;
+    height:90px;
+    background:#f1f1f1;
+    position:absolute;
+    top:220px;
+    left:666px;
+    z-index:-1;
+}
+.abo-text p {
+    color:#777;
+    margin-top:15px;
+}
+.abo-modular img {
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid #f1f1f1;
+    margin: 0 50px;
+}
+.abo-mirror {
+    width:400px;
+    height:180px;
+}
+.abo-modular:nth-child(even) .abo-mirror {
+    order:-1;
+}
+.team {
+    margin-top:120px;
+}
+.team-content {
+    margin-top:80px;
+    display:flex;
+    justify-content:space-between;
+}
+.team-member {
+    width:430px;
+
+}
+.team-member img {
+    width:70%;
+    border-radius:50%;
+}
+.team-member h3 {
+    margin-top: 30px;
+}
+
+.team-member p {
+    color:#777;
+    margin:15px 0;
+}
+.team-member ul,
+#footer ul{
+    display:flex;
+    justify-content:center;
+}
+.team-member li,
+#footer li {
+    width:50px;
+    height:50px;
+    margin: 0 15px;
+    font-size:30px;
+    line-height:50px;
+    background: #000;
+    color: #fff;
+    border-radius:50%;
+    cursor:pointer;
+    text-align:center;
+}
+.team-member li:hover,
+#footer li:hover {
+    background-color:#fed136;
+}
+.Sponsor {
+    margin-top:120px;
+    display:flex;
+    justify-content:space-between;
+    padding:60px 0;
+}
+.Sponsor div {
+    margin: 0 20px;
+}
+.Sponsor img {
+    cursor:pointer;
+}
+.contactus {
+    min-width:1333px;
+    margin:0  auto;
+    background: url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/map-image.png) no-repeat;
+    background-color:#000;
+    background-position:center;
+    text-align:center;
+    padding:5px;
+}
+.contactus h1 {
+    padding-top:150px;
+    font-size:40px;
+    color:#fff;
+}
+.contactus i {
+    color:#777;
+}
+.contactus .contact {
+    margin:70px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width:1333px;
+    border:1px solid;
+}
+.contact div {
+    margin:25px;
+}
+.contactus input[type=text] {
+    display:block;
+    width:550px;
+    height:60px;
+    border:none;
+    border-radius:3px;
+    font-size:18px;
+    padding:5px 8px;
+}
+.contactus input[type=text]:focus {
+    border:none;
+}
+.message {
+    float:right;
+}
+.message textarea {
+    width:550px;
+    height:248px;
+    border:none;
+    border-radius:3px;
+    padding:5px 8px;
+    line-height:50px;
+    font-size:18px;
+}
+.clearbox:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.submit {
+    width:1333px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+}
+.contactus input[type=button] {
+    border:none;
+    width:256px;
+    height:80px;
+    line-height:80px;
+    font-size: 22px;
+    font-weight: bold;
+    color:#fff;
+    background:#fed136;
+    border-radius:5px;
+    cursor:pointer;
+}
+.contactus input[type=button]:hover {
+    background: orange;
+}
+#footer {
+    width:1333px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px;
+}
+#footer a {
+    color:#fed136;
+    margin:5px;
+}
+#footer a:hover {
+    text-decoration:underline;
+}
+/*轮播的CSS*/
+.carousel{
+    margin:0 auto;
+    overflow: hidden;
+    position:relative;
+}
+.img-ct {
+    display:flex;
+    position:absolute;
+}
+.img{
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+.btnWrap{
+    padding:0;
+    width:320px;
+    height:30px;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform: translate(-50%,0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.btn{
+    width:24px;
+    height:8px;
+    border:2px solid #ccc;
+    border-radius:8px;
+    margin: 0 10px;
+    cursor:pointer;
+}
+.leftbtn,
+.rightbtn{
+    width:40px;
+    height:40px;
+    border:1px solid #fff;
+    border-radius:50%;
+    position:absolute;
+    color:#fff;
+    cursor:pointer;
+    text-align:center;
+    line-height:32px;
+}
+.leftbtn{
+    top:48%;
+    left:30px;
+}
+.rightbtn{
+    top:48%;
+    right:30px;
+}
+.active {
+    background:#ccc;
+}
+/*瀑布流*/
+.lff-content{
+    position: relative;
+    width: 960px;
+    margin:0 auto;
+}
+.item{
+    position: absolute;
+    width: 320px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border:1px solid #ccc;
+}
+.item a{
+    margin:5px;
+    width:310px;
+    display: block;
+}
+.item a > img{
+    width:100%;
+}
+.item h3{
+    border-bottom: 1px solid #ccc;
+    height:30px;
+    line-height: 30px;
+    margin:5px;
+}
+.item p{
+    margin:5px;
+    color:#ccc;
+}
+.hide{
+    display: none;
+}
+.load{
+    display: block;
+    margin: 0 auto;
+    width:120px;
+    height:30px;
+}
